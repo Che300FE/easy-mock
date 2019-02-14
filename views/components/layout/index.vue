@@ -12,7 +12,7 @@
       <div class="em-layout__nav" v-show="pageAnimated">
         <Menu theme="dark" :active-name="pageKey" mode="horizontal">
           <div class="nav-logo" @click="$router.push('/')">
-            <img src="/public/images/easy-mock.png">
+            <img src="/easymock/public/images/easy-mock.png">
           </div>
           <div class="nav-search">
             <i-input v-model="searchValue" placeholder="Search Easy Mock" ref="search"></i-input>

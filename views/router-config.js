@@ -17,6 +17,7 @@ Vue.use(Router)
 export function createRouter () {
   const router = new Router({
     mode: 'history',
+    base: '/easymock/',
     routes: [
       { path: '/login', component: login },
       { path: '/log-out', component: logOut },

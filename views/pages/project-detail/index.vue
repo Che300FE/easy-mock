@@ -35,7 +35,7 @@
             </Col>
             <Col span="5">
               <div>
-                <img :src="group ? '/public/images/group-default.png' : project.user.head_img" />
+                <img :src="group ? '/easymock/public/images/group-default.png' : project.user.head_img" />
                 <p class="author">{{group ? group.name : project.user.nick_name}}</p>
               </div>
             </Col>
@@ -225,7 +225,7 @@ export default {
       }
     },
     baseUrl () {
-      const baseUrl = location.origin + '/mock/' + this.project._id
+      const baseUrl = location.origin + '/easymock/mock/' + this.project._id
       return this.project.url === '/' ? baseUrl : baseUrl + this.project.url
     },
     group () {

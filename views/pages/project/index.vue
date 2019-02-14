@@ -176,7 +176,7 @@ export default {
     clip (project) {
       const clipboard = new Clipboard('.copy-url', {
         text () {
-          return location.origin + '/mock/' + project._id + project.url
+          return location.origin + '/easymock/mock/' + project._id + project.url
         }
       })
       this.cliped = true
