@@ -62,7 +62,7 @@ module.exports = class ViewMiddleware {
       } catch (error) {
         if (error.code === 401) {
           ctx.status = 302
-          ctx.redirect('/login')
+          ctx.redirect('/easymock/login')
         } else {
           ctx.throw(error)
         }
